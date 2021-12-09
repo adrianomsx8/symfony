@@ -1,0 +1,12 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+<h1>Blog</h1>
+<p>Teste Blog </p>
+{% for bike in bikes %}
+   <p>{{bike.name}}</p>
+{% endfor %}
+{% endblock %}
+
+
+ 

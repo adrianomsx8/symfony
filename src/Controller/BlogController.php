@@ -12,8 +12,11 @@ class BlogController extends AbstractController
      */
     public function homepage(): Response
     {
-        return new Response (
+       return  $this->render('blog.html.twig',[
+           'dia' => date('D')
+       ]);
+        /*return new Response (
             '<html><body><h1>Welcome!</h1></body></html>'
-        );
+        );*/
     }
 }
